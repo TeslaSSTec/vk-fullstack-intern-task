@@ -1,0 +1,33 @@
+@import "./../vars.css";
+
+.header{
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    padding-left: 62px;
+    padding-right: 62px;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.linksHolder {
+    display:flex;
+    align-content: stretch;
+}
+
+
+.navLink {
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    padding:23px;
+}
+
+.navLinkActive{
+     color: #FFFFFF;
+    background-color: var(--accent-color);
+}

@@ -1,0 +1,67 @@
+@keyframes cardAnim {
+    from {
+        box-shadow: revert;
+    }
+
+    to {
+        box-shadow: 0px 9px 18px rgba(0, 0, 0, 0.24);
+        box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24);
+    }
+}
+
+@keyframes heartAnim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.catCard {
+    background-color: #ffffff;
+    display: flex inline;
+    justify-items: center;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+}
+
+.catCard:hover {
+    animation: cardAnim 0.5s forwards;
+}
+
+.catImage {
+    width: 225px;
+    height: 225px;
+    object-fit: contain;
+}
+
+.heart {
+    position: absolute;
+    bottom: 23px;
+    right: 17px;
+}
+
+.catCard:hover > .borderedHeart {
+    animation: heartAnim 0.5s forwards;
+}
+
+.borderedHeart {
+    opacity: 0;
+}
+
+.filledHeart {
+    opacity: 0;
+    fill: #F24E1E
+}
+
+.filledHeart:hover {
+    animation: heartAnim 0.3s forwards;
+}
+
+.filledHeart:active {
+    fill: #FF3A00;
+}
+

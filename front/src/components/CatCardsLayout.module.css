@@ -1,0 +1,8 @@
+.cardsHolder {
+    display:flex;
+    gap:10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 3rem;
+    margin-bottom: 0;
+}
